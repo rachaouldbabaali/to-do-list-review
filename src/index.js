@@ -81,7 +81,6 @@ class UI {
 }
 
 // Event: Display Tasks
-// document.addEventListener('DOMContentLoaded', UI.displayTasks);
 document.addEventListener('DOMContentLoaded', () => {
   const tasks = Store.getTasks();
   tasks.forEach((task) => {
@@ -114,13 +113,6 @@ document.querySelector('#todo-form').addEventListener('submit', (e) => {
     UI.clearFields();
   }
 });
-
-// Event: Remove a Task
-// document.querySelector('#tasks').addEventListener('click', (e) => {
-//   console.log('remove task ');
-//   e.preventDefault();
-
-// });
 
 // Event: Edit a Task on change
 document.querySelector('#tasks').addEventListener('change', (e) => {
